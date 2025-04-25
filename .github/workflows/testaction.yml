@@ -9,7 +9,7 @@ name: FIRST
         - dev
 jobs: 
     My_Jobs: 
-     runs-on: centos-latest
+     runs-on: ubuntu-latest
      steps:
         -name: checkout code
          uses: actions/checkout@v3
