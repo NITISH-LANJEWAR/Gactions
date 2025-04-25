@@ -1,1 +1,19 @@
+name: FIRST
 
+ on: 
+   pull_request:
+    branches:
+        - dev
+   push:
+    branches:
+        - dev
+jobs: 
+    My_Jobs: 
+     runs-on: centos-latest
+     steps:
+        -name: checkout code
+         uses: actions/checkout@v3
+        -name: use node version
+         uses: actions/setup-node@v3
+         with:
+            node-version: 17
