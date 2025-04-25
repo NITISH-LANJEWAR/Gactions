@@ -1,6 +1,6 @@
 name: FIRST
 
- on: 
+on: 
    pull_request:
     branches:
         - dev
